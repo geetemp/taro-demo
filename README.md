@@ -349,7 +349,7 @@ function mapStateToProps(state) {
 #### 开发的过程中的注意点
 
 * 所有的组件均需使用taro的ui 组件库。 
-* 样式要有类名，不要直接组件名。因为如果你使用了组件名的话，多端统一
+* 样式要有类名，不要直接组件名。因为如果你使用了组件名的话，多端统一,另外一端没有这个组件名对应的控件，则样式不起作用。
 * dist文件夹中有内容的时候，编译会经常报错，解决方案，编译之前把dist删除，配置`package`中做如下配置` "dev:weapp": "rimraf dist && npm run build:weapp -- --watch",`
 * less 不支持import，现在只能把全局样式写在app.less中。 
 
