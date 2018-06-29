@@ -14,17 +14,17 @@ $ npm install -g @tarojs/cli
 $ yarn global add @tarojs/cli
 ```
 
-2、创建模板项目
+2、克隆项目
 
 ```javascript
-$ taro init myApp
+$ git clone https://github.com/geetemp/taro-demo.git
 ```
 
-在创建的过程中，会提醒你是否使用typescript，sass等选项，根据自己的技术站选择即可。
 
 3、安装依赖
 
 ```
+$ cd taro-demo 
 $ npm install 
 ```
 
@@ -40,7 +40,6 @@ $ npm run dev:h5
 
 在这个步骤，有一个注意点，使用微信开发者工具打开项目的根目录，并需要把`es6转es5` 、`上传代码时样式自动补全`、`上传代码时自动压缩`  三个选项勾掉，要不然会报错。
 
-5、预览项目，编译成功后，在微信开发者工具或浏览器观看项目，会发现只有一个hello word。如果你能成功的看到这个hello word，那么恭喜你，第一步准备工作已经完成了。
 
 #### 目录结构
 
